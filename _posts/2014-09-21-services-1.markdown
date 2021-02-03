@@ -1,8 +1,0 @@
----
-layout: default
-img: traitevo.png
-category: Services
-title: Death to the Stock Photo:<br>Special Thanks
-description: |
----
-  test 1

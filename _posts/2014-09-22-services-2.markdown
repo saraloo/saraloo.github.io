@@ -1,9 +1,0 @@
----
-layout: default
-img: lifehistory.png
-category: Services
-title: 3D Device Mockups<br>by PSDCovers
-description: |
----
-  
- test2

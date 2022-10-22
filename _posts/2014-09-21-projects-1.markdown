@@ -1,8 +1,0 @@
----
-layout: default
-img: traitevo.png
-category: Projects 
-title: Trait evolution  
-description: |
----
-  How does a pathogen evolve over the course of an epidemic? How do within-host infection dynamics affect between-host transmission, and vice-versa? 

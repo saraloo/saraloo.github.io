@@ -1,9 +1,0 @@
----
-layout: default
-img: lifehistory.png
-category: Projects 
-title: Human life-history evolution
-description: |
----
-  
- How does human life-history drive the evolution of reproductive strategies? 

@@ -1,9 +1,0 @@
----
-layout: default
-img: snps.png
-category: Projects
-title: Patterns of Variation in genomic data 
-description: |
----
-
- What do the patterns of variation in genomic data tell us about a pathogen's evolution?

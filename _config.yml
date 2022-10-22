@@ -1,31 +1,44 @@
-# ----------------------- #
-#      Main Configs       #
-# ----------------------- #
+# Site settings
+title: Jekyll-Uno
+description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/jekyll-uno'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+# disable_landing_page: true
 
-url: saraloo.github.io 
-title: Sara L Loo 
-email: sara.loo@unsw.edu.au 
-author:  Sara L Loo
-description: > # "Sara is a postdoctoral researcher at the University of New South Wales.
-copyright: 'Copyright &copy; 2021 Sara Loo. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+author:
+  name: 'Josh Gerdes'
+  email: josh@joshgerdes.com
+  twitter_username: joshgerdes
+  facebook_username: joshgerdes
+  github_username:  joshgerdes
+  linkedin_username:  joshgerdes
 
-# ----------------------- #
-#    Jekyll & Plugins     #
-# ----------------------- #
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
-permalink: pretty
+highlighter: rouge
 
-# ----------------------- #
-#   3rd Party Settings    #
-# ----------------------- #
+sass:
+    sass_dir: _sass
+    style: compressed
 
-social:
-  - title: twitter
-    url: https://twitter.com/saraliyenloo
-  - title: github
-    url: https://github.com/saraloo
-  - title: linkedin
-    url: https://www.linkedin.com/in/saraloo93/ 
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

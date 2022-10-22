@@ -4,15 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi there! Welcome to my personal site, where you'll find more about me and the things I've been up to - both professionally and side projects I've been working on for fun.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Currently, I am a Postdoctoral Fellow at the Bloomberg School of Public Health, in the Department of International Health. I am an applied mathematician, focussing on infectious disease dynamics, both from the perspective of evolutionary dynamics at multiple scales, and from a public health perspective.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+My experience has included the study of infectious diseases and theoretical analysis of within- and between-host dynamics, as well as the cultural evolution of social behaviors and reproductive strategies. Generally, I have used mathematical modelling to explore dynamics in the fields of population genetics, evolutionary biology, and anthropology. For more details, see the [Projects](http://saraloo.github.io/projects) page. 
 
+I received a Bachelor of Medical Mathematics (Advanced Honours) from the University of Wollongong, Australia, and a PhD in applied mathematics from the University of Sydney, Australia. For more details, see my [CV](http://saraloo.github.io/cv).
 
-[jekyll-organization]: https://github.com/jekyll

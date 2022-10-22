@@ -2,29 +2,67 @@
 layout: default
 robots: noindex
 ---
+<div id="root">
 
-<div class="main-post-list">
+  <div id="about">
+    <header class="post-header">
+        <h1 class="post-title">About me</h1>
+    </header>
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
-        <div class="post-list__meta">
-            <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
-            {% if post.tags.size > 0 %}
-            &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
-            {% endif %}
-        </div>
-        <hr class="post-list__divider">
-      </li>
-    {% endfor %}
-  </ol>
+    <section class="post">
+        This is a page about me etc etc blah 
+    </section>
+</div>
 
-  <hr class="post-list__divider ">
+<div id="projects">
+  <header class="post-header">
+      <h1 class="post-title">Projects</h1>
+  </header>
 
-  {% if paginator.previous_page or paginator.next_page %}
-      {% include pagination.html %}
-  {% endif %}
+  <section class="post">
+      Projects list? 
+  </section>
+</div>
+
+<div id="cv">
+  <header class="post-header">
+      <h1 class="post-title">CV</h1>
+  </header>
+
+  <section class="post">
+      about me
+  </section>
+</div>
+
+
+
+<div id="blog" class="main-post-list">
+
+    <ol class="post-list">
+        {% for post in paginator.posts %}
+        <li>
+            <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}"
+                                                            title="{{ post.title }}">{{ post.title }}</a></h2>
+            <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
+            <div class="post-list__meta">
+                <time datetime="{{ post.date | date: " %Y-%m-%d %H:%M
+                " }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
+                {% if post.tags.size > 0 %}
+                &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a
+                    href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
+                {% endif %}
+            </div>
+            <hr class="post-list__divider">
+        </li>
+        {% endfor %}
+    </ol>
+
+    <hr class="post-list__divider ">
+
+    {% if paginator.previous_page or paginator.next_page %}
+    {% include pagination.html %}
+    {% endif %}
+
+</div>
 
 </div>

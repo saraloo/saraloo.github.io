@@ -2,7 +2,7 @@
 title: Sara L Loo
 description: 'Personal website'
 url: 'http://saraloo.github.io'
-baseurl: '/saraloo.github.io'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 # disable_landing_page: true

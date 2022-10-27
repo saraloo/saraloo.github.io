@@ -5,7 +5,3 @@
 layout: home
 ---
 
-
-# This ends up on every page? 
-
-How to make the pages refer to a specific section

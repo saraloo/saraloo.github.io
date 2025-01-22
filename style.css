@@ -1,42 +1,113 @@
+/* Reset and layout styles */
 body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  height: 100%;
-}
-
-.background-image {
-  background: url('background.jpg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-p {
-  margin: 10px 0;
-}
-
-.links a {
-  color: #00acee;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 1.2rem;
-}
-
-.links a:hover {
-  text-decoration: underline;
-}
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #A0522D; /* Slightly lighter brown */
+    line-height: 1.5;
+    color: black; /* Black text */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Header with your name */
+  .header {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Centered content */
+  .content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Take up available space */
+    height: 100%;
+    text-align: left;
+  }
+  
+  .content {
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  
+  /* Footer for social links */
+  .footer {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  
+  .social-links a:hover {
+    color: #555; /* Slightly darker on hover */
+  }
+  
+  /* Navigation links */
+  .nav-links {
+    text-align: right;
+    margin-top: 30px;
+    font-size: 0.8rem; /* Smaller font size */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 0.7rem;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Blog post styles */
+  .post {
+    margin-bottom: 20px;
+  }
+  
+  .post h2 {
+    font-size: 1.5rem;
+  }
+  
+  .post p {
+    font-size: 1rem;
+  }
+  
+  .post a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .post a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Photo gallery styles */
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

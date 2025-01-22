@@ -3,22 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal academic landing page">
-  <title>Your Name - Academic Landing Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Personal website">
+  <title>About Page</title>
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <style>
+    /* Reset and layout styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Helvetica', sans-serif;
+      background-color: #A0522D; /* Slightly lighter brown */
+      line-height: 1.5;
+      color: black; /* Black text */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Header with your name */
+    .header {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Centered content */
+    .content-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1; /* Take up available space */
+      height: 100%;
+      text-align: left;
+    }
+
+    .content {
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .content h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    /* Footer for social links */
+    .footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .social-links a {
+      text-decoration: none;
+      color: black;
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    .social-links a:hover {
+      color: #555; /* Slightly darker on hover */
+    }
+
+    .nav-links {
+      text-align: right;
+      margin-top: 30px;
+      font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      margin: 0 15px;
+      font-size: 0.7rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
 </head>
 <body>
-  <div class="background-image">
+  <!-- Header with your name -->
+  <div class="header">sara loo</div>
+
+  <!-- Navigation Links -->
+  <!-- <div class="nav-links">
+    <a href="blog.html">blog</a>
+    <a href="photos.html">photos</a>
+  </div> -->
+
+  <!-- Centered content -->
+  <div class="content-box">
     <div class="content">
-      <h1>Your Name</h1>
-      <p>Your Title | Your Institution</p>
-      <p>Welcome to my academic homepage! I'm passionate about [your field of study/research]. Feel free to connect with me using the links below.</p>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=yourid" target="_blank">Google Scholar</a>
-        <a href="mailto:your.email@example.com">Email</a>
-      </div>
+      <h1><em>it's me</em></h1>
+      <p>
+        Hi there! 👋 Welcome to my personal site, where you’ll find more about me and some of the things I’ve been up to. 
+      </p>
+      <p>
+        I'm an applied mathematician, focussing on infectious disease dynamics both from the perspective of evolutionary dynamics at multiple scales, and from a public health perspective. Some of my previous work has included the study of infectious diseases and theoretical analysis of within- and between-host dynamics, as well as the cultural evolution of social behaviors and reproductive strategies. 
+      </p>
+      <p>
+        I'm currently an Assistant Scientist at Johns Hopkins University at the Bloomberg School of Public Health and my current projects revolve around scenario projections of respiratory viruses:
+        <ul>
+          <li><a href="https://flepimop.org" target="_blank" style="color: black;">flepiMoP</a> <a href="https://github.com/HopkinsIDD/flepiMoP" target="_blank" style="color: black;">(GitHub)</a>: 
+            a flexible epidemic modeling pipeline that can simulate a wide range of compartmental models of infectious disease transmission and allows for the integration of multiple data sources and model structures to project the spread of respiratory viruses. This model has been used to model COVID-19, influenza, and RSV in the USA. 
+          </li>
+          <li><a href="https://scenariomodelinghub.org/" target="_blank" style="color: black;">Scenario Modeling Hub</a>: coordination team member of scenario modeling hub, a collaborative multi-model effort that provides projections and real-time modeling evidence to support ongoing public health needs. 
+          </li>
+        </ul>
+      </p>
+      <p>Feel free to connect with me if you want to know more about what I do!</p>
     </div>
   </div>
+
+  <!-- Footer with social links -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://bsky.app/profile/loosaraliyen.bsky.social" target="_blank" title="Bluesky">
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
+      <a href="https://github.com/saraloo" target="_blank" title="Github">
+        <i class="fab fa-github"></i> 
+      </a>
+      <a href="mailto:sloo2@jhu.edu" target="_blank" title="Email">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
